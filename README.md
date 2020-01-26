@@ -1,1 +1,1 @@
-CHattr is a messaging Rails application using ActionCable. 
+Chattr is a messaging Rails application using ActionCable. 
