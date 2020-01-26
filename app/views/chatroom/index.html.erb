@@ -5,66 +5,44 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="container col-8 chat-body">
-      <div class="card">
-        <div class="container">
-          <div class="card">
-            <div class="card-body row">
-              <div class="col-3">
-                Name
-              </div>
-              <div class="col-9 message-body">
-                message text
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body row">
-              <div class="col-3">
-                Name
-              </div>
-              <div class="col-9 message-body">
-                message text
+    <div class="container col-8 bg-light">
+     <h4 class="text-center mt-2"> chatroom </h4>
+      <div class="chat-body flex-column">
+        <div class="chat-card card">
+          <div class="container">
+            <div class="card">
+              <div class="card-body row">
+                <div class="col-3 message-name text-secondary">
+                  Name
+                </div>
+                <div class="col-9 message-body">
+                  message text
+                </div>
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card-body row">
-              <div class="col-3">
-                Name
-              </div>
-              <div class="col-9 message-body">
-                message text
-              </div>
-            </div>
-          </div>
-        </div>
-      <div class="card mt-5">
-        <div class="container">
-          <form class="form-inline">
-            <div class="form-group col-sm-10">
-              <label for="message" class="sr-only">Message</label>
-              <input type="text" class="form-control flex-grow-1" id="message" placeholder="Message">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
       </div>
+      <div class="card mt-5 message-submit bg-info">
+          <div class="container">
+            <form class="form-inline">
+              <div class="form-group col-sm-10">
+                <label for="message" class="sr-only">Message</label>
+                <input type="text" class="form-control flex-grow-1" id="message" placeholder="Message">
+              </div>
+              <button type="submit" class="btn btn-dark">Submit</button>
+            </form>
+          </div>
+        </div>
     </div>
   </div>
   
       
-    <div class="container col-4 chat-nav flex-column">
-      <div class="card">
-        <ul class="nav text-light rounded flex-column bg-dark">
-          <li class="nav-item mx-3">
+    <div class="container col-4 chat-nav flex-column mt-2 mb-3">
+      <div class="card bg-info">
+      <h5 class="text-light text-center"> users online </h5>
+        <ul class="nav text-light rounded flex-column ">
+          <li class="nav-item mx-3 mb-1">
           1
-          </li>
-          <li class="nav-item mx-3">
-          2
-          </li>
-          <li class="nav-item mx-3">
-          3
           </li>
         </ul>
       </div>

@@ -1,1 +1,26 @@
 @import 'bootstrap/dist/css/bootstrap';
+
+.card {
+  border: none;
+}
+
+.chat-body {
+  border-radius: 5px;
+  padding: 10px 15px;
+  min-height: 300px;
+  position: relative;
+  display: flex;
+}
+
+.chat-card {
+  flex-grow: 1;
+}
+
+.message-submit {
+  padding: 10px 0;
+  flex-shrink: 1;
+}
+
+.login-card, .signup-card {
+  min-height: 300px;
+}
