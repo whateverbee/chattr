@@ -10,16 +10,7 @@
       <div class="chat-body flex-column">
         <div class="chat-card card">
           <div class="container">
-            <div class="card">
-              <div class="card-body row">
-                <div class="col-3 message-name text-secondary">
-                  Name
-                </div>
-                <div class="col-9 message-body">
-                  message text
-                </div>
-              </div>
-            </div>
+            <%= render @messages %>
           </div>
       </div>
       <div class="card mt-5 message-submit bg-info">
