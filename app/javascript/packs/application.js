@@ -16,3 +16,16 @@ require("bootstrap")
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 import 'jquery/src/jquery';
+
+function scroll_bottom() {
+  if ($('#messages').length > 0) {
+    $('#messages').scrollTop($('#messages')[0].scrollHeight);
+  }
+}
+
+$(document).on('turbolinks:load', function() {
+  scroll_bottom();
+  
+})
+
+  

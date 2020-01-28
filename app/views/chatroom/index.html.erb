@@ -5,37 +5,26 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="container col-8 bg-light">
+    <div class="container col-12 bg-light">
      <h4 class="text-center mt-2"> chatroom </h4>
       <div class="chat-body flex-column">
-        <div class="chat-card card">
-          <div class="container">
+        <div class="chat-card card" id="messages">
+          <div class="container" id="message-container">
             <%= render @messages %>
           </div>
       </div>
       <div class="card mt-5 message-submit bg-info">
           <div class="container">
-          <%= form_for(@message, html: {class: "form-inline", role: "form"}, url: message_path) do |f| %>
+          <%= form_for(@message, html: {class: "form-inline", role: "form"}, url: message_path, remote: true) do |f| %>
             <div class="form-group col-sm-10">
-              <%= f.text_field :body, placeholder: "Message", class: "form-control col-sm-12" %>
+              <%= f.text_field :body, placeholder: "Message", class: "form-control col-sm-12", html: {onfocus: "this.value=''"} %>
             </div>
-              <%= f.button "Submit", class: "btn btn-dark" %>
+              <%= f.button "Submit", class: "btn btn-dark"%>
             <% end %>
           </div>
         </div>
     </div>
   </div>
   
-      
-    <div class="container col-4 chat-nav flex-column mt-2 mb-3">
-      <div class="card bg-info">
-      <h5 class="text-light text-center"> users online </h5>
-        <ul class="nav text-light rounded flex-column ">
-          <li class="nav-item mx-3 mb-1">
-          1
-          </li>
-        </ul>
-      </div>
-    </div>
   </div>
 </div>
